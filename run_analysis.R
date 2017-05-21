@@ -129,11 +129,8 @@ df.data2 <- group_by(.data = df.data,
   summarise_each(funs(mean))
 
 # export final data set
-write.table(df.data1,
-            file = "tidyDataSet1.txt",
-            row.names = FALSE) 
 write.table(df.data2,
-            file = "", 
+            file = "tidyDataSet2.txt",
             row.names = FALSE) 
 
 
