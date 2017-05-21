@@ -122,12 +122,13 @@ df.test <- cbind(df.testsubject,
 # merge test and train sets
 df.data1 <- rbind(df.train, df.test)
 
-# 
+# group by variables to get data set for point 5
 library(dplyr)
 df.data2 <- group_by(.data = df.data,
                      SubjectID, Activity) %>%
   summarise_each(funs(mean))
 
+# export final data set
 write.table(df.data1,
             file = "tidyDataSet1.txt",
             row.names = FALSE) 
