@@ -108,7 +108,7 @@ Each row represents the mean or standard deviation of different measurements whi
 
 
 ## Description tidyDataSet2.RData
-Each row represents the mean of each varoable from **tidyDataSet1.RData** for each subject-activity-tuple.
+Each row represents the mean of each variable from **tidyDataSet1.RData** for each subject-activity-tuple.
 
 ### Columns
 The columns represent the mean for the given measurement. Refere to the description of columns for **tidyDataSet2.RData**.
